@@ -21,5 +21,10 @@ pipeline{
                 }
             }
         }
+        stage('second-level-stage'){
+            steps{
+                echo "this is getting better"
+            }
+        }
     }
 }
