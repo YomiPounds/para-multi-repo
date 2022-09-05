@@ -23,16 +23,16 @@ pipeline{
         }
         stage('second-level-stage'){
             steps{
-                echo "this is getting better"
+                echo "this is getting better!!!!!"
             }
         }
-        stage('stage-testcondition'){
+        stage('stage-testconditions'){
             when{
                 branch 'uat'
             }
             steps{
                 echo "skipping stages"
-                sh 'sudo chmod +x yomi.sh'
+                sh 'chmod +x yomi.sh'
                 sh 'bash -x idris.sh'
             }
         }
