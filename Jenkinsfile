@@ -32,7 +32,7 @@ pipeline{
             }
             steps{
                 echo "skipping stages"
-                sh 'sudo chmod +x yomi.sh'
+                sh 'chmod +x yomi.sh'
                 sh 'bash -x idris.sh'
             }
         }
