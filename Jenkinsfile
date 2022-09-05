@@ -16,7 +16,7 @@ pipeline{
                 }
                 stage('parallel-2'){
                     steps{
-                        echo "the only was is a lot of practise"
+                        echo "the only way is a lot of practise!!!!!!"
                     }
                 }
             }
@@ -32,7 +32,7 @@ pipeline{
             }
             steps{
                 echo "skipping stages"
-                sh 'sudo chmod +x yomi.sh'
+                sh 'chmod +x yomi.sh'
                 sh 'bash -x idris.sh'
             }
         }
