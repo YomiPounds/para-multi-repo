@@ -16,7 +16,7 @@ pipeline{
                 }
                 stage('parallel-2'){
                     steps{
-                        echo "the only was is a lot of practise"
+                        echo "the only way is a lot of practise!!!!!!"
                     }
                 }
             }
