@@ -26,7 +26,7 @@ pipeline{
                 echo "this is getting better!!!!!"
             }
         }
-        stage('stage-testcondition'){
+        stage('stage-testconditions'){
             when{
                 branch 'uat'
             }
