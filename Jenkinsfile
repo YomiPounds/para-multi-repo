@@ -16,14 +16,14 @@ pipeline{
                 }
                 stage('parallel-2'){
                     steps{
-                        echo "the only was is a lot of practise"
+                        echo "the only way is a lot of practise!!!!!!"
                     }
                 }
             }
         }
         stage('second-level-stage'){
             steps{
-                echo "this is getting better"
+                echo "this is getting better!!!!!"
             }
         }
         stage('stage-testcondition'){
@@ -32,6 +32,8 @@ pipeline{
             }
             steps{
                 echo "skipping stages"
+                sh 'chmod +x yomi.sh'
+                sh 'bash -x idris.sh'
             }
         }
     }
