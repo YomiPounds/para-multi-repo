@@ -14,7 +14,7 @@ pipeline{
                         sh 'lscpu'
                     }
                 }
-                stage(parallel-2){
+                stage('parallel-2'){
                     steps{
                         echo "the only was is a lot of practise"
                     }
