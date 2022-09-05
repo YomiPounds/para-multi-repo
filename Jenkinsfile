@@ -21,5 +21,18 @@ pipeline{
                 }
             }
         }
+        stage('second-level-stage'){
+            steps{
+                echo "this is getting better"
+            }
+        }
+        stage('stage-testcondition'){
+            when{
+                branch 'uat'
+            }
+            steps{
+                echo "skipping stages"
+            }
+        }
     }
 }
